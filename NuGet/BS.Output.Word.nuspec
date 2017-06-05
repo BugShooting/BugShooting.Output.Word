@@ -6,7 +6,7 @@
 			<title>Word Output for Bug Shooting</title>
       <authors>Bug Shooting, Alexej Hirsch</authors>
       <owners>Bug Shooting, Alexej Hirsch</owners>
-      <licenseUrl>https://github.com/BugShooting/Output.Word/blob/master/LICENSE.txt</licenseUrl>
+      <licenseUrl>https://github.com/BugShooting/Output.Word/raw/master/LICENSE.txt</licenseUrl>
 			<projectUrl>http://www.bugshooting.com/</projectUrl>
 			<iconUrl>https://github.com/BugShooting/Output.Word/tree/master/BS.Output.Word/Resources/logo_64x32.png</iconUrl>
 			<requireLicenseAcceptance>false</requireLicenseAcceptance>
