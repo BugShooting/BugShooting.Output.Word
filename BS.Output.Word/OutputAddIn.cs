@@ -77,7 +77,7 @@ namespace BS.Output.Word
           image.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
 
           document.InlineShapes.AddPicture(filePath);
-
+          
           File.Delete(filePath);
 
         }
