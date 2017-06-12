@@ -4,16 +4,9 @@
   public class Output: IOutput 
   {
     
-    string name;
-
-    public Output(string name)
-    {
-      this.name = name;
-    }
-    
     public string Name
     {
-      get { return name; }
+      get { return "Microsoft Word"; }
     }
 
     public string Information

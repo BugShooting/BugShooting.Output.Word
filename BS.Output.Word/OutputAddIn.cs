@@ -36,7 +36,7 @@ namespace BS.Output.Word
     
     protected override Output CreateOutput(IWin32Window Owner)
     {
-      return new Output(Name);
+      return new Output();
     }
 
     protected override Output EditOutput(IWin32Window Owner, Output Output)
@@ -46,18 +46,12 @@ namespace BS.Output.Word
 
     protected override OutputValueCollection SerializeOutput(Output Output)
     {
-
-      OutputValueCollection outputValues = new OutputValueCollection();
-
-      outputValues.Add(new OutputValue("Name", Output.Name));
-
-      return outputValues;
-      
+      return new OutputValueCollection();
     }
 
     protected override Output DeserializeOutput(OutputValueCollection OutputValues)
     {
-      return new Output(OutputValues["Name", this.Name].Value);
+      return new Output();
     }
 
     protected async override Task<V3.SendResult> Send(Output Output, V3.ImageData ImageData)
