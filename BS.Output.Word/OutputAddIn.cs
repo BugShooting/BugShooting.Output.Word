@@ -54,7 +54,7 @@ namespace BS.Output.Word
       return new Output();
     }
 
-    protected async override Task<V3.SendResult> Send(Output Output, V3.ImageData ImageData)
+    protected async override Task<V3.SendResult> Send(IWin32Window Owner, Output Output, V3.ImageData ImageData)
     {
       try
       {
