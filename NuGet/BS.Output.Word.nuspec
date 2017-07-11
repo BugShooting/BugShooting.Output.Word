@@ -3,7 +3,7 @@
     <metadata>
 			<id>BS.Output.Word</id>
 			<version>1.0.0</version>
-			<title>Word Output for Bug Shooting</title>
+			<title>Microsoft Word Output for Bug Shooting</title>
       <authors>Bug Shooting, Alexej Hirsch</authors>
       <owners>Bug Shooting, Alexej Hirsch</owners>
       <licenseUrl>https://github.com/BugShooting/Output.Word/raw/master/LICENSE.txt</licenseUrl>
