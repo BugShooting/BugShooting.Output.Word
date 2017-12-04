@@ -1,4 +1,6 @@
-﻿namespace BS.Output.Word
+﻿using BS.Plugin.V3.Output;
+
+namespace BugShooting.Output.Word
 {
 
   public class Output: IOutput 

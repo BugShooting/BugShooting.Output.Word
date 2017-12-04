@@ -3,10 +3,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Threading.Tasks;
 using System.IO;
+using BS.Plugin.V3.Output;
+using BS.Plugin.V3.Common;
 
-namespace BS.Output.Word
+
+namespace BugShooting.Output.Word
 {
-  public class OutputAddIn: V3.OutputAddIn<Output>
+  public class OutputPlugin: OutputPlugin<Output>
   {
 
     protected override string Name
@@ -44,17 +47,17 @@ namespace BS.Output.Word
       return null; 
     }
 
-    protected override OutputValueCollection SerializeOutput(Output Output)
+    protected override OutputValues SerializeOutput(Output Output)
     {
-      return new OutputValueCollection();
+      return new OutputValues();
     }
 
-    protected override Output DeserializeOutput(OutputValueCollection OutputValues)
+    protected override Output DeserializeOutput(OutputValues OutputValues)
     {
       return new Output();
     }
 
-    protected async override Task<V3.SendResult> Send(IWin32Window Owner, Output Output, V3.ImageData ImageData)
+    protected async override Task<SendResult> Send(IWin32Window Owner, Output Output, ImageData ImageData)
     {
       try
       {
@@ -82,12 +85,12 @@ namespace BS.Output.Word
         document = null;
         application = null;
 
-        return new V3.SendResult(V3.Result.Success);
+        return new SendResult(Result.Success);
         
       }
       catch (Exception ex)
       {
-        return new V3.SendResult(V3.Result.Failed, ex.Message);
+        return new SendResult(Result.Failed, ex.Message);
       }
       
     }
